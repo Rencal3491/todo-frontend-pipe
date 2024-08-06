@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App";
 import Login from "./user/Login";
 import SignUp from "./user/SignUp";
+import Todo from "./todocomponents/Todo";
 
 function Copyright() {  //footer 컴포넌트
   return(
@@ -25,6 +26,7 @@ function AppRouter() {
           <Route path="/" element={<App />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<SignUp />} />
+          <Route path="todo" element={<Todo/> } />
         </Routes>
       </BrowserRouter>
       <Box mt={5}>
